@@ -59,5 +59,4 @@ class Building {
           poly.draw(ctx, { fill: "#D44", stroke: "#C44", lineWidth: 8, join: "round" });
        }
     }
- }
- 
+}
