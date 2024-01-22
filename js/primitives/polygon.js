@@ -97,6 +97,12 @@ class Polygon {
         return intersectionCount % 2 == 1;
     }
 
+    static load(info) {
+        return new Polygon(
+            info.points.map((i) => new Point(i.x, i.y))
+        );
+    }
+
     drawSegments(ctx) {
         for (const seg of this.segments) {
             seg.draw(ctx, { color: getRandomColor(), width: 5 });
